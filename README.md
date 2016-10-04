@@ -1,5 +1,3 @@
-# pyGerbil
-
 #ABOUT
 This is a python version of "gerbil" software (https://github.com/gerbilvis/gerbil).
 
