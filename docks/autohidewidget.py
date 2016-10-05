@@ -5,3 +5,6 @@ class AutohideWidget(QWidget):
         super(AutohideWidget, self).__init__(parent)
         # how many pixels the widget lurks into the view while scrolled out
         self.OutOffset = 14
+
+    def paintEvent(self, e):
+        QWidget.paintEvent(e)

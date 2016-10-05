@@ -34,12 +34,13 @@ class FalseColorDock(QDockWidget):
         # scene.offTop = sel.OutOffset
         # view.addWidget(sel)
 
-    def FalseColoringUpdate(self):
-        # p = QPixmap("2.jpg")
-        self.scene.pixmap = p
+    def Update(self, filename):
+        self.scene.DrawScene(filename)
 
 class ScaledView(QGraphicsScene):
     def __init__(self, parent=None):
         super(ScaledView, self).__init__(parent)
-        self.addPixmap(QPixmap("2.jpg"))
         self.scaler = QTransform()
+
+    def DrawScene(self, filename):
+        self.addPixmap(QPixmap(filename))

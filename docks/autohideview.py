@@ -11,6 +11,6 @@ class AutohideView(QGraphicsView):
         self.target = QGLWidget(format)
 
         self.target.setMouseTracking(True)
-
+        #
         self.setViewport(self.target)
         self.setViewportUpdateMode(QGraphicsView.FullViewportUpdate)
