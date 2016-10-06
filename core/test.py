@@ -1,1 +1,2 @@
-import pymulti_img
+import multi_img_py
+
